@@ -60,9 +60,9 @@ Revisiting secparam's message:
 
     <+secparam[m]> ... If you plot the age of ring members, you get a peak at about 20 blocks. As we understand it, the decoys are sampled from an exp-gamma with shape 19.29, rate 1.61, and the plot of that peaks around 1300 instead. ...
 
-We have identical data, but I cannot find the 20.
+We have identical data, but I cannot find the 20 or 1300.
 
-My guess is that they were looking at the scale in minutes instead of blocks, which they mentioned elsewhere:
+My guess regarding 20 is that they were looking at the scale in minutes instead of blocks, which they mentioned elsewhere:
 
     <+secparam[m]> Hrm, that might explain why we get a slightly more spiky plot if we plot by minute vs block number
 
@@ -162,6 +162,7 @@ Peak: 13
 - Peaks in these results were examined in more detail, and the suggested peak 20 was debunked.
 - Possible improvements to parameters were found and suggested.
 - In retrospect, it is recognized that:
-  - secparam 800k-1000k and 1200k-1400k showed the overall distribution for every Pre-RingCT amount.
+  - secparam 1000k-1200k, 1250k-1400k, and 1400k-1600k overlap multiple hard fork versions respectively, and therefore overlap different versions of blockchain consensus rules and Monero core software.
+  - secparam 800k-1000k and 1000k-1200k showed the overall distribution for every Pre-RingCT amount.
   - secparam 1250k-1400k and 1400k-1600k showed primarily a RingCT ringmember age distribution with Pre-RingCT noise.
 - Remaining plots, applying the new parameters, were shown.
